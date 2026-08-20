@@ -730,3 +730,30 @@ footer {
         padding-bottom: 42px;
     }
 }
+/* Expanded project cards */
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 570px;
+}
+
+.project-card > p:not(.project-course) {
+    margin-bottom: 0;
+}
+
+.project-tags {
+    margin-top: auto;
+    padding-top: 30px;
+}
+
+@media (max-width: 900px) {
+    .project-card {
+        min-height: auto;
+    }
+
+    .project-tags {
+        margin-top: 10px;
+        padding-top: 20px;
+    }
+}
